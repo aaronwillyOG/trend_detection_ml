@@ -3,6 +3,7 @@
 An end-to-end Machine Learning pipeline that predicts short-term crypto market trends. Built to demonstrate **Production ML** principles: containerization, modular code, and API deployment.
 
 ## 🏗 Architecture
+```mermaid
 graph LR
     A[🌍 Real-Time Data<br>(yfinance)] -->|Ingest| B(🐍 Data Pipeline)
     B -->|Clean & Feature Eng| C{🤖 XGBoost Model}
@@ -10,6 +11,7 @@ graph LR
     D -->|Load| E[🐳 Docker Container]
     E -->|Serve| F[🚀 FastAPI]
     F -->| visualize| G[📊 Streamlit Dashboard]
+```
 
 ## 🚀 How to Run (Docker)
 You can run the inference API anywhere with Docker:
