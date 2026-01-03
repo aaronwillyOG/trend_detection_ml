@@ -17,15 +17,15 @@ class CryptoModel:
 
     def train(self, X_train, y_train):
         
-        print("🧠 Training XGBoost model...")
+        print("Training XGBoost model...")
         self.model.fit(X_train, y_train)
-        print("✅ Training complete.")
+        print("Training complete.")
 
     def evaluate(self, X_test, y_test):
         
         y_pred = self.model.predict(X_test)
         acc = accuracy_score(y_test, y_pred)
-        print(f"\n📊 Model Accuracy: {acc:.4f}")
+        print(f"\nModel Accuracy: {acc:.4f}")
         print("Detailed Report:")
         print(classification_report(y_test, y_pred))
         return acc
@@ -44,11 +44,11 @@ class CryptoModel:
         # Create directory if it doesn't exist
         os.makedirs(os.path.dirname(path), exist_ok=True)
         joblib.dump(self.model, path)
-        print(f"💾 Model saved to: {path}")
+        print(f"Model saved to: {path}")
 
     def load(self, path: str):
 
         if not os.path.exists(path):
-            raise FileNotFoundError(f"❌ Model file not found at {path}")
+            raise FileNotFoundError(f"Model file not found at {path}")
         self.model = joblib.load(path)
-        print(f"♻️ Model loaded from: {path}")
+        print(f"Model loaded from: {path}")

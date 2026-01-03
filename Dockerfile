@@ -4,7 +4,6 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-# Upgrade pip and install with a longer timeout (1000s) to prevent disconnects
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir --default-timeout=1000 -r requirements.txt
 

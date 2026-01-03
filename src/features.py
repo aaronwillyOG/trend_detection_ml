@@ -31,7 +31,7 @@ def create_features(df: pd.DataFrame) -> pd.DataFrame:
 
     df.dropna(inplace=True)
 
-    print(f"✅ Features created. Data shape: {df.shape}")
+    print(f"Features created. Data shape: {df.shape}")
     print(f"   Target Distribution: {df['target'].value_counts(normalize=True).to_dict()}")
     
     return df
