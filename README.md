@@ -5,12 +5,12 @@ An end-to-end Machine Learning pipeline that predicts short-term crypto market t
 ## 🏗 Architecture
 ```mermaid
 graph LR
-    A[🌍 Real-Time Data<br>(yfinance)] -->|Ingest| B(🐍 Data Pipeline)
-    B -->|Clean & Feature Eng| C{🤖 XGBoost Model}
-    C -->|Train & Evaluate| D[💾 Model Artifact]
-    D -->|Load| E[🐳 Docker Container]
-    E -->|Serve| F[🚀 FastAPI]
-    F -->| visualize| G[📊 Streamlit Dashboard]
+    A["🌍 Real-Time Data<br>(yfinance)"] -->|Ingest| B("🐍 Data Pipeline")
+    B -->|"Clean & Feature Eng"| C{"🤖 XGBoost Model"}
+    C -->|"Train & Evaluate"| D["💾 Model Artifact"]
+    D -->|Load| E["🐳 Docker Container"]
+    E -->|Serve| F["🚀 FastAPI"]
+    F -->|Visualize| G["📊 Streamlit Dashboard"]
 ```
 
 ## 🚀 How to Run (Docker)
