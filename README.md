@@ -3,7 +3,7 @@
 An end-to-end Machine Learning pipeline that predicts short-term crypto market trends. Built to demonstrate **Production ML** principles: containerization, modular code, and API deployment.
 
 ## 📺 Watch the Demo
-[![Watch the video](https://img.youtube.com/vi/https://youtu.be/oOvBQLSAbWo?si=gXRDZw6w4jILgnQ7/maxresdefault.jpg)](https://youtu.be/oOvBQLSAbWo?si=gXRDZw6w4jILgnQ7)
+[![Watch the video](https://img.youtube.com/vi/oOvBQLSAbWo/maxresdefault.jpg)](https://youtu.be/oOvBQLSAbWo)
 
 ## 🏗 Architecture
 ```mermaid
